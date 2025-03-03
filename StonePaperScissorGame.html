@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Game</title>
+<style>
+    body{
+    text-align:center;
+    }
+</style>
+</head>
+<body id="game">
+    <h1>Stone Paper Scissor Game<h1><hr>
+    <button onclick="
+    let randomNumber=Math.random()*3;
+    let computerChoice;
+    if (randomNumber>0 && randomNumber<=1){
+    computerChoice='Stone';
+    }
+    else if(randomNumber>1 && randomNumber<=2){
+    computerChoice='Paper'}
+    else{
+    computerChoice='Scissor'}
+     let result;
+    if(computerChoice==='Stone'){
+    result=`It's a Tie`}
+    else if(computerChoice==='Paper'){
+    result=`User Won`}
+    else{
+    result=`Computer Won`}
+    alert(`Your Choice is Stone and Computer Choice is ${computerChoice} and ${result}`)">Stone</button>
+
+    <button onclick="
+    randomNumber=Math.random()*3;
+    if (randomNumber>0 && randomNumber<=1){
+       computerChoice='Stone';
+    }
+    else if(randomNumber>1 && randomNumber<=2){
+    computerChoice='Paper'}
+    else{
+    computerChoice='Scissor'}
+
+    if(computerChoice==='Stone'){
+    result=`User Won`}
+    else if(computerChoice==='Paper'){
+    result=`It's a Tie`}
+    else{
+    result=`Computer Won`}
+    alert(`Your Choice is Paper and Computer Choice is ${computerChoice} and ${result}`)">Paper</button>
+    <button onclick="
+    randomNumber=Math.random()*3;
+    if (randomNumber>0 && randomNumber<=1){
+       computerChoice='Stone';
+    }
+    else if(randomNumber>1 && randomNumber<=2){
+    computerChoice='Paper'}
+    else{
+    computerChoice='Scissor'}
+    
+    if(computerChoice==='Stone'){
+    result=`Computer Won`}
+    else if(computerChoice==='Paper'){
+    result=`It's a Tie`}
+    else{
+    result=`Computer Won`}
+    alert(`Your Choice is Scissor and Computer Choice is ${computerChoice} and ${result}`)">Scissor</button>
+</body>
+</html>
